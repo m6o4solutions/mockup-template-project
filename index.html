@@ -4,205 +4,89 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="style.css" rel="stylesheet" />
 		<title>Mockup Template Project</title>
-
-		<style>
-			/* --------------------
-       Base Reset
-    -------------------- */
-			*,
-			*::before,
-			*::after {
-				box-sizing: border-box;
-			}
-
-			body {
-				margin: 0;
-				font-family:
-					system-ui,
-					-apple-system,
-					BlinkMacSystemFont,
-					"Segoe UI",
-					sans-serif;
-				line-height: 1.6;
-				color: #1f2933;
-				background-color: #f9fafb;
-			}
-
-			a {
-				color: inherit;
-				text-decoration: none;
-			}
-
-			/* --------------------
-       Layout
-    -------------------- */
-			.container {
-				max-width: 1100px;
-				margin: 0 auto;
-				padding: 2rem 1rem;
-			}
-
-			header {
-				background: #ffffff;
-				border-bottom: 1px solid #e5e7eb;
-			}
-
-			header .container {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			nav a {
-				margin-left: 1.5rem;
-				font-size: 0.9rem;
-				color: #4b5563;
-			}
-
-			main {
-				padding: 3rem 0;
-			}
-
-			section {
-				margin-bottom: 4rem;
-			}
-
-			footer {
-				background: #ffffff;
-				border-top: 1px solid #e5e7eb;
-				font-size: 0.85rem;
-				color: #6b7280;
-			}
-
-			/* --------------------
-       Typography
-    -------------------- */
-			h1,
-			h2,
-			h3 {
-				margin-top: 0;
-				line-height: 1.25;
-			}
-
-			h1 {
-				font-size: 2.25rem;
-			}
-
-			h2 {
-				font-size: 1.5rem;
-				margin-bottom: 1rem;
-			}
-
-			p {
-				max-width: 65ch;
-			}
-
-			/* --------------------
-       Components
-    -------------------- */
-			.hero {
-				background: #ffffff;
-				padding: 3rem;
-				border-radius: 8px;
-				border: 1px solid #e5e7eb;
-			}
-
-			.hero p {
-				font-size: 1.05rem;
-				color: #4b5563;
-			}
-
-			.button {
-				display: inline-block;
-				margin-top: 1.5rem;
-				padding: 0.6rem 1.25rem;
-				border-radius: 6px;
-				background: #111827;
-				color: #ffffff;
-				font-size: 0.9rem;
-			}
-
-			.grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-				gap: 1.5rem;
-			}
-
-			.card {
-				background: #ffffff;
-				border: 1px solid #e5e7eb;
-				border-radius: 8px;
-				padding: 1.5rem;
-			}
-
-			/* --------------------
-       Utility
-    -------------------- */
-			.muted {
-				color: #6b7280;
-			}
-		</style>
 	</head>
-	<body>
+	<body class="m-0 bg-gray-50 font-sans leading-relaxed text-gray-800">
 		<!-- Header -->
-		<header>
-			<div class="container">
+		<header class="border-b border-gray-200 bg-white">
+			<div class="mx-auto flex max-w-275 items-center justify-between p-4">
 				<strong>Project Name</strong>
 				<nav>
-					<a href="#">Home</a>
-					<a href="#">Features</a>
-					<a href="#">About</a>
-					<a href="#">Contact</a>
+					<a href="#" class="ml-6 text-sm text-gray-600 no-underline hover:text-gray-900"
+						>Home</a
+					>
+					<a href="#" class="ml-6 text-sm text-gray-600 no-underline hover:text-gray-900"
+						>Features</a
+					>
+					<a href="#" class="ml-6 text-sm text-gray-600 no-underline hover:text-gray-900"
+						>About</a
+					>
+					<a href="#" class="ml-6 text-sm text-gray-600 no-underline hover:text-gray-900"
+						>Contact</a
+					>
 				</nav>
 			</div>
 		</header>
 
 		<!-- Main Content -->
-		<main class="container">
+		<main class="mx-auto max-w-275 px-4 py-12">
 			<!-- Hero Section -->
-			<section class="hero">
-				<h1>Project Placeholder Headline</h1>
-				<p>
-					This is a neutral placeholder layout meant to be adapted for different projects. Replace this copy with your
-					actual value proposition.
+			<section class="mb-16 rounded-lg border border-gray-200 bg-white p-12">
+				<h1 class="mt-0 text-4xl leading-tight">Project Placeholder Headline</h1>
+				<p class="max-w-[65ch] text-gray-600">
+					This is a neutral placeholder layout meant to be adapted for different projects.
+					Replace this copy with your actual value proposition.
 				</p>
-				<a href="#" class="button">Primary Action</a>
+				<a
+					href="#"
+					class="mt-6 inline-block rounded-md bg-gray-900 px-5 py-2.5 text-sm text-white no-underline hover:bg-gray-800"
+					>Primary Action</a
+				>
 			</section>
 
 			<!-- Features / Content Grid -->
-			<section>
-				<h2>Section Title</h2>
-				<div class="grid">
-					<div class="card">
-						<h3>Item One</h3>
-						<p class="muted">Short description for this item. Keep it concise and factual.</p>
+			<section class="mb-16">
+				<h2 class="mt-0 mb-4 text-2xl leading-tight">Section Title</h2>
+				<div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6">
+					<div class="rounded-lg border border-gray-200 bg-white p-6">
+						<h3 class="mt-0 leading-tight">Item One</h3>
+						<p class="max-w-[65ch] text-gray-500">
+							Short description for this item. Keep it concise and factual.
+						</p>
 					</div>
-					<div class="card">
-						<h3>Item Two</h3>
-						<p class="muted">Short description for this item. Keep it concise and factual.</p>
+					<div class="rounded-lg border border-gray-200 bg-white p-6">
+						<h3 class="mt-0 leading-tight">Item Two</h3>
+						<p class="max-w-[65ch] text-gray-500">
+							Short description for this item. Keep it concise and factual.
+						</p>
 					</div>
-					<div class="card">
-						<h3>Item Three</h3>
-						<p class="muted">Short description for this item. Keep it concise and factual.</p>
+					<div class="rounded-lg border border-gray-200 bg-white p-6">
+						<h3 class="mt-0 leading-tight">Item Three</h3>
+						<p class="max-w-[65ch] text-gray-500">
+							Short description for this item. Keep it concise and factual.
+						</p>
 					</div>
 				</div>
 			</section>
 
 			<!-- Secondary Section -->
-			<section>
-				<h2>Another Section</h2>
-				<p>
-					Use this area for supporting information, explanations, or secondary calls to action. The layout is
-					intentionally simple.
+			<section class="mb-16">
+				<h2 class="mt-0 mb-4 text-2xl leading-tight">Another Section</h2>
+				<p class="max-w-[65ch]">
+					Use this area for supporting information, explanations, or secondary calls to
+					action. The layout is intentionally simple.
 				</p>
 			</section>
 		</main>
 
 		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<p>&copy; 2026 Project Name. All rights reserved. Website Created by M6O4 Solutions.</p>
+		<footer class="border-t border-gray-200 bg-white text-sm text-gray-500">
+			<div class="mx-auto max-w-275 p-4">
+				<p class="max-w-[65ch]">
+					&copy; 2026 Project Name. All rights reserved. Website Created by M6O4
+					Solutions.
+				</p>
 			</div>
 		</footer>
 	</body>
